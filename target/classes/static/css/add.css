@@ -1,0 +1,35 @@
+html,body,table
+{
+	margin: 0;
+	height: 100%;
+}
+
+body
+{
+	background-image:url(../img/rankbg.jpg);
+	 background-size:1560px;
+	 background-position:top ;
+	background-repeat:no-repeat ;
+}
+
+#user{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+#username{
+	color: #4a4266;
+	width: 100px;
+	position: absolute;
+	top: 30px;
+	right: 80px;
+	
+}
+
+#userlogo{
+	width: 120px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}

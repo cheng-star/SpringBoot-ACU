@@ -1,0 +1,154 @@
+html,body,table
+{
+	margin: 0;
+	height: 100%;
+}
+
+body
+{
+	background-image:url(../img/indexbg.jpg);
+	 background-size:100%;
+	 background-position:bottom ;
+	background-repeat:repeat-x ;
+}
+
+div#initial img{
+	
+	position: fixed; 
+	bottom: 0;
+	width: 100%;
+	
+}
+
+div#indexmain img{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#regulation{
+	position: fixed;
+	left: 10px;
+	top: 10px;
+}
+
+button{
+	font-size: 17px;
+	color: #fffbf0;
+	width: 80px;
+	height: 25px;
+	border: none;
+	background-color: transparent;
+}
+
+#rb{
+	width: 130px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#ruledg{
+	position: absolute;
+	left: 100px;
+	top: 15px;
+	width: 350px;
+}
+
+#rule1{
+	position: absolute;
+	left: 180px;
+	top: 30px;
+	width: 180px;
+}
+
+#login{
+	position: fixed;
+	left: 640px;
+	top:200px ;
+	background-image:url(../img/login.png) ;
+	background-size:466px 400px ;
+	background-repeat:no-repeat ;
+}
+
+#persuade{
+	font-size: 20px;
+	position: absolute;
+	left: 100px;
+	top: 30px;
+}
+
+#error{
+	color:#f47983;
+	position: absolute;
+	left: 130px;
+	top: 65px;
+}
+
+#loginsub{
+	width: 200px;
+	color: #FFFBF0;
+	font-size: 15px;
+	text-align: center;
+	background-color:#64B3F4;
+	height: 30px;
+	position: absolute;
+	left: 32px;
+	top: 150px;
+}
+
+#loginwhole{
+	position: absolute;
+	left: 50px;
+	top: 0px;
+}
+#language1{
+	position: absolute;
+	left: 185px;
+	top: 300px;
+}
+
+#language2{
+	position: absolute;
+	left: 230px;
+	top: 300px;
+}
+#register{
+	width: 80px;
+	position: absolute;
+	left: 270px;
+	top: 130px;
+}
+
+#loginlogo{
+	width:100px;
+	position: absolute;
+	left: 0px;
+	top: -12px;
+}
+
+#loginex{ 
+	visibility: hidden;
+}
+
+#loginself{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+
+#username{
+	position: relative;
+	right: 35px;
+	width: 200px;
+	height: 20px;
+	margin: 15px;
+}
+#password{
+	position: relative;
+	right: 35px;
+	width: 200px;
+	height: 20px;
+	margin: 15px;
+
+}

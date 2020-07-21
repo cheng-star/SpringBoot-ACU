@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<title>再次起飞/登录</title>
+	<script type="text/javascript" th:src="@{/js/jquery-3.4.1.js}"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("#ruledg").hide();
+			$("#rule1").hide();
+		})
+
+		$(document).ready(function(){
+			$("#rb").click(function(){
+
+				$("#ruledg").slideToggle("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$("#rb").click(function(){
+
+				$("#rule1").slideToggle("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$("#begin").click(function(){
+
+				window.location.href="playspace.html"
+			});
+		});
+
+		setTimeout(function(){
+			$("#indexmain").fadeOut(1000);
+		},3000);
+	</script>
+	<script type="text/text/javascript" th:src="@{/js/index.js}"></script>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+</head>
+<body onload="init()">
+
+<div id="regulation">
+	<button id="rb" type="button" > |  [[#{login.rule}]]  |</button>
+	<img th:src="@{/img/rulebg.png}" id="ruledg" />
+	<img src="img/rule1.png" id="rule1" />
+	<br />
+
+</div>
+<div id="login">
+	<p id="persuade" th:text="#{login.tip}">等你好久了，快速登录，一起搞事情！</p>
+	<p id="error" th:text="${msg}"th:if="${not #strings.isEmpty(msg)}"></p>
+	<img th:src="@{/img/loginlogo.png}" id="loginlogo" />
+	<img th:src="@{/img/login.png}"  id="loginex"/>
+
+	<a id="language1" th:href="@{/goLogin(l='zh_CN')}">中文 </a>|<a id="language2" th:href="@{/goLogin(l='en_US')}"> English</a>
+
+	<form th:action="@{/user/login}" method="post" id="loginself">
+		<div id="loginwhole">
+			<input type="text" name="username"  id="username" th:placeholder="#{login.username}"/><br/>
+			<input type="password" name="password"  id="password" th:placeholder="#{login.password}"/><br />
+		</div>
+		<button type="submit "  id="loginsub">[[#{login.btn}]]</button>
+		<a id="register" th:href="@{/goRegister}" th:value="#{login.goregister}">去注册</a>
+	</form>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	function init(){
+		window.setInterval(changerule,1200);
+	}
+	var index = 1;
+	function changerule(){
+		rule = document.getElementById("rule1");
+		index ++;
+		if(index>2){
+			index = 1;
+		}
+		rule.src = "img/rule"+index+".png";
+	}
+
+</script>
+
+

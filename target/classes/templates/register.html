@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>  
+		<meta charset="utf-8"> 
+		<title>再次起飞/注册</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<div id="registerhead">
+			<p><span id="reh1">再次起飞</span><span id="reh2">通行证</span><span id="reh3">已有账户，</span><a id="reh4" th:href="@{/goLogin}">马上登录</a></p>
+			
+		</div>  
+		<div id="registerlink">
+			<hr /> 
+		</div>
+		<div id="registermain">
+			<form th:action="@{/user/register}" method="post" id="loginself">
+				<div id="loginwhole">
+				账号：<input type="text" name="username"  id="username"/><br/>
+				密码：<input type="password" name="password"  id="password"/><br />
+				</div>
+				<div id="sexselect">
+					男神<input type="radio" name="sex" value="男" />女神<input type="radio" name="sex" value="女" />
+				</div>
+				<button type="submit " id="loginsub">注册</button>
+			</form>
+			 <img src="img/registerbg.png" id="registerbg"/> 
+		</div> 
+		
+	</body>
+</html> 

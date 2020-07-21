@@ -1,0 +1,11 @@
+{
+  "name": "狂神说Java",
+  "url": "http://localhost:8080/cwfit/getUsers",
+  "page": 1,
+  "isNonProfit": true,
+  "address": {
+    "street": "含光门",
+    "city": "陕西西安",
+    "country": "中国"
+  }
+}

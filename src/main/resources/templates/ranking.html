@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title></title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/ranking.css}"/>
+</head>
+<body>
+<div id="user">
+    <font id="username">[[${session.loginUser}]]</font>
+    <img th:src="@{/img/userlogo.png}" id="userlogo"/>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <main role="main" class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-4">
+            <h2>排行耪</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th>分数</th>
+                        <th>玩家</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="emp:${emps}">
+                        <td th:text="${emp.getUsername()}"></td>
+                        <td th:text="${emp.getRecord()}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+</div>
+
+</body>
+</html>

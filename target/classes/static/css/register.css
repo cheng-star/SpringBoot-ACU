@@ -1,0 +1,115 @@
+html,body,table
+{
+	margin: 0;
+	height: 100%;
+}
+
+body
+{
+	background-image:url(../img/psbg.png);
+	 background-size:100%;
+	 background-position:bottom ;
+	background-repeat:repeat-x ;
+}
+
+#registerhead{
+	position: fixed;
+	top: 70px;
+	height: 200px;
+	width: 100%;
+}
+
+#reh1{
+	font-size: 35px;
+	color:#a0d8ef;
+	position: absolute;
+	top: 0px;
+	left: 260px;
+}
+
+#reh2{
+	font-size: 30px;
+	color: #bce2e8;
+	position: absolute;
+	top: 5px;
+	left: 430px;
+}
+
+#reh3{
+	color: #bce2e8;
+	position: absolute;
+	top: 25px;
+	left: 1030px;
+}
+
+#reh4{
+	color: #bce2e8;
+	position: absolute;
+	top: 25px;
+	left: 1102px;
+}
+
+#registerlink{
+	position: fixed;
+	top: 120px;
+	height: 10px;
+	width: 100%;
+}
+
+#registermain{
+	width: 800px;
+	position: fixed;
+	top: 160px;
+	left: 350px;
+	background-image:url(../img/registerbg.png);
+	background-size:100%;
+	background-repeat:repeat-x ;
+}
+
+#registerbg{
+	visibility: hidden;
+}
+
+#loginwhole{
+	position: absolute;
+	top: 90px;
+	left: 250px;
+}
+
+#username{
+	width: 250px;
+	height: 20px;
+	margin: 10px;
+	
+}
+
+#password{
+	width: 250px;
+	height: 20px;
+	margin: 10px;
+	
+}
+
+#repassword{
+	width: 219px;
+	height: 20px;
+	margin: 10px;
+}
+
+#loginsub{
+	width: 200px;
+	color: #FFFBF0;
+	font-size: 15px;
+	text-align: center;
+	background-color:#177cb0;
+	height: 30px;
+	position: absolute;
+	top: 325px;
+	left: 315px;
+}
+
+#sexselect{
+	position: absolute;
+	top: 250px;
+	left: 345px;
+}

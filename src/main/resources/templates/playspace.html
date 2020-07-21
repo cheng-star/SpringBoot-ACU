@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>再次起飞</title>
+	</head> 
+	<script type="text/javascript" src="js/jquery-3.4.1.js"> </script>
+	
+	<link rel="stylesheet" type="text/css" th:href="@{/css/playspace.css}"/>
+	<script type="text/javascript" th:src="@{/js/playspace.js}"> </script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#end").hide();
+		})
+	</script>
+	<body onload="init()">
+		<div id="boatself">
+			<img th:src="@{/img/gameboat.png}" id="boat" />
+		</div>
+		<div id="gameboat" onload="facter">
+		<img th:src="@{/img/balloon1.png}" id="balloon1" />
+		<img th:src="@{/img/balloon2.png}" id="balloon2" />
+		<img th:src="@{/img/balloon3.png}" id="balloon3" />
+		</div> 
+		<div id="gameboat1" onload="facter">
+		<img th:src="@{/img/balloon2.png}" id="balloon12" />
+		<img th:src="@{/img/balloon3.png}" id="balloon13" />
+		</div> 
+		</div> 
+		<div id="gameboat2" onload="facter">
+		<img th:src="@{/img/balloon1.png}" id="balloon21" />
+		<img th:src="@{/img/balloon3.png}" id="balloon23" />
+		</div> 
+		<div id="gameboat3" onload="facter">
+		<img th:src="@{/img/balloon2.png}" id="balloon32" />
+		</div> 
+		<!-- <div id="gameboat4" onload="facter">
+		<img src="img/balloon1.png" id="balloon1" />
+		</div> -->
+		
+		<a id="back" th:href="@{/goHomePage}">| 返回首页 |</a>
+		
+			<div class="islandanimation1">
+			<img th:src="@{/img/island2.png}" id="island2" />
+			<img th:src="@{/img/island3.png}" id="island3"/>
+			<img th:src="@{/img/island4.png}" id="island4" />
+			<img th:src="@{/img/island5.png}" id="island5" />
+		</div> 
+		<div class="islandanimation2">
+			<img th:src="@{/img/island3.png}" id="island23"/>
+			<img th:src="@{/img/island4.png}" id="island24" />
+			<img th:src="@{/img/island5.png}" id="island25" />
+		</div>
+		<div class="islandanimation3">
+			<img th:src="@{/img/island3.png}" id="island33"/>
+		</div> 
+
+		<div class="cloadanimation1">
+			<img th:src="@{/img/cloud1.png}" id="cload1"  />
+			<img th:src="@{/img/cloud2.png}" id="cload2"  />
+			<img th:src="@{/img/cloud4.png}" id="cload4" />
+		</div>
+		<div class="cloadanimation2">
+			<img th:src="@{/img/cloud2.png}" id="cload22"  />
+			<img th:src="@{/img/cloud3.png}" id="cload23"  />
+			<img th:src="@{/img/cloud4.png}" id="cload24" />
+		</div>
+		
+		<div class="cloadanimation3">
+			<img th:src="@{/img/cloud1.png}" id="cload31"  />
+			<img th:src="@{/img/cloud2.png}" id="cload32"  />
+			<img th:src="@{/img/cloud3.png}" id="cload33"  />
+		</div>
+		
+		<div class="cloadanimation4">
+			<img th:src="@{/img/cloud1.png}" id="cload41"  />
+			<img th:src="@{/img/cloud3.png}" id="cload43"  />
+			<img th:src="@{/img/cloud4.png}" id="cload44" />
+		</div>
+		
+		<div id="timer" >
+			<span id="minute">00</span>
+				<span id="punctuation">:</span>
+			<span id="second">00</span>
+		</div>
+		
+		<div id="end"> 
+			
+			<img src="img/endremind.png" id="endremind" />
+			<strong id="endtime"></strong>
+			<a id="endback" th:href="@{/goHomePage}">返回</a>
+		</div> 
+		
+		<canvas id="canvas" width="1500px" height="700px";>
+			Your browser doesn't support the HTML5 element canvas.
+		</canvas>
+		
+	</body>
+</html>  
+<script>
+	$(document).ready(function(){
+		$("#back").click(function(){
+			
+			window.location.href="index.html"
+		});
+	});
+	
+	$(document).ready(function(){
+		$("#endback").click(function(){
+			
+			window.location.href="index.html"
+		});
+	});
+	
+</script>

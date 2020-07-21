@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/500.css}"/>
+	</head>
+	<style>
+		html,body,table
+		{
+			margin: 0;
+			height: 100%;
+		}
+		body
+		{
+			background-color: black;
+		}
+		#main404
+		{
+			position: relative;
+			top: 0px;
+		}
+		#bg404
+		{
+			width: 1520px;
+			position: absolute;
+		}
+		p{
+			color:#70f3ff;
+			position: absolute;
+			top: 430px;
+			left: 690px;
+		}
+		a{
+			text-decoration: none;
+			width: 100px;
+			height: 25px;
+			text-align: center;
+			background-color: #e6cde3;
+			border-radius: 25px;
+			position: absolute;
+			top: 480px;
+			left: 728px;
+		}
+	</style>
+	<body>
+		<div id="main404">
+			<img th:src="@{/img/500bg.png}" id="bg404"/>
+			<p ><strong>亲，请选择以下一个操作</strong></p>
+			<a th:href="@{/goLogin}">返回首页</a>
+		</div>
+	</body>
+</html>

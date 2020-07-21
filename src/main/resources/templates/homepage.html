@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>再次起飞/主页</title>
+		<script type="text/javascript" th:src="@{/js/jquery-3.4.1.js}"></script>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/homepage.css}"/>
+		<script>
+			$(document).ready(function(){
+				$("#ruledg").hide();
+				$("#rule1").hide();
+			})
+			
+			$(document).ready(function(){ 
+				$("#rb").click(function(){
+					
+					$("#ruledg").slideToggle("slow");
+				});
+			});
+			
+			$(document).ready(function(){
+				$("#rb").click(function(){
+					
+					$("#rule1").slideToggle("slow");
+				});
+			});   
+		</script>
+	</head>
+	<body onload="init()">
+		<div id="regulation">
+			<button id="rb" type="button" > |  攻 略  |</button>
+			<img th:src="@{/img/rulebg.png}" id="ruledg" />
+			<img src="img/rule1.png" id="rule1" />
+			<br />
+<!--			<a id="rk" type="button" th:href="@{/list}"> |  排 名  |</a>-->
+		</div>
+		<img th:src="@{/img/userbg.png}" id="userbg"/>
+<!--		<div id="logout">-->
+<!--			<a class="nav-link" th:href="@{/user/logout}" id="logouta">注销</a>-->
+<!--		</div>-->
+		<div id="user">
+			<img th:src="@{/img/userlogo.png}" id="userlogo"/>
+		</div>
+		<div id="login">
+				<p id="persuade"></p>
+				 <img th:src="@{/img/login.png}"  id="loginex"/>
+				 <a id="begin" th:href="@{/goPlay}"> 开启旅程</a>
+				<img src="img/load1.png" id="load"/>
+				<img th:src="@{/img/loginlogo.png}" id="loginlogo" />
+
+		</div>
+	</body>
+</html>
+<script>
+	 function init(){
+		window.setInterval(changerule,1500);
+		window.setInterval(changedrew,500);
+	} 
+	var index = 1;
+	 function changerule(){
+		 rule = document.getElementById("rule1");
+		 index ++;
+		 if(index>2){
+			 index = 1;
+		 }
+		 rule.src = "img/rule"+index+".png";
+	 }
+	
+	var ordinal = 1;
+	function changedrew(){
+		drew = document.getElementById("load");
+		ordinal++;
+		if(ordinal>6){
+			ordinal = 6;
+		}
+		drew.src = "img/load"+ordinal+".png";
+	}
+
+</script>

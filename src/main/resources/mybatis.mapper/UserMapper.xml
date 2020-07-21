@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cwfit.mapper.UserMapper">
+    <insert id="addUser" parameterType="User">
+        insert into user (username,password,sex)
+        value (#{username}, #{password}, #{sex});
+    </insert>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id = #{id}
+    </delete>
+
+    <update id="updateUser" parameterType="User">
+        update user set record=#{record}
+        where id=#{id};
+    </update>
+
+    <select id="queryUserById" resultType="User">
+        select * from user
+        where id = #{id}
+    </select>
+
+    <select id="queryUserList" resultType="User">
+        select * from user ORDER BY record desc limit 10
+    </select>
+
+    <select id="queryUserByName" parameterType="String" resultType="User">
+        select * from user where username = #{username}
+    </select>
+</mapper>

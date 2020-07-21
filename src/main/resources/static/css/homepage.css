@@ -1,0 +1,135 @@
+html,body,table
+{
+	margin: 0;
+	height: 100%;
+}
+
+body
+{
+	background-image:url(../img/indexbg.jpg);
+	 background-size:1540px;
+	 background-position:bottom ;
+	background-repeat:no-repeat ;
+}
+
+button{
+	font-size: 17px;
+	color: #fffbf0;
+	width: 80px;
+	height: 25px;
+	border: none;
+	background-color: transparent;
+}
+
+#rb{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#rk{
+	text-decoration: none;
+	color:#fffbf0 ;
+	position: absolute;
+	left: 22px;
+	top: 45px;
+}
+
+#ruledg{
+	position: absolute;
+	left: 100px;
+	top: 15px;
+	width: 350px;
+}
+
+#rule1{
+	position: absolute;
+	left: 180px;
+	top: 30px;
+	width: 180px;
+}
+
+#login{
+	position: fixed;
+	left: 640px;
+	top:200px ;
+	background-image:url(../img/login.png) ;
+	background-size:466px 400px ;
+	background-repeat:no-repeat ;
+}
+#loginlogo{
+	width:100px;
+	position: absolute;
+	left: 0px;
+	top: -12px;
+}
+
+#loginex{ 
+	visibility: hidden;
+}
+
+#begin{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 45px;
+	background-image: url(../img/begin.png);
+	background-size: 150px ;
+	background-position:bottom ;
+	background-repeat:no-repeat;
+	height: 50px;
+	width: 200px;
+	position: absolute;
+	left: 135px;
+	top: 295px;
+}
+
+#load{
+	position: absolute;
+	top: 45px;
+	left: 40px;
+	width: 390px;
+}
+#user{
+	position: fixed;
+	top: 0px;
+	right: 10px;
+}
+
+#username{
+	text-align: center;
+	color: #f0fcff;
+	width: 100px;
+	position: absolute;
+	top: 10px;
+	right: 200px;
+
+}
+
+#userlogo{
+    width: 120px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#logout
+{
+	position: fixed;
+	top: 10px;
+	right: 165px;
+}
+#userbg
+{
+	width: 600px;
+	height: 110px;
+	position: fixed;
+	top: -58px;
+	right: -88px;
+}
+
+#logouta
+{
+	color: #f0fcff;
+	text-decoration: none;
+}
